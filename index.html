@@ -1,0 +1,41 @@
+<p style="line-height: 18px; font-size: 18px;  font-family: times;">
+
+<br>
+Welcome to my taylor series exponential approximator!<br>
+
+We are going to approximate e^3:<br>
+(As you know, e^3 should be between 8 and 27<br>
+<br>
+<br>
+e^3 is about: 
+<script>
+document.writeln("<br>");
+document.writeln("<br>");
+
+var sum = 0;
+var exponential = 3;
+
+for(i = 0; i < 30; i++){
+ sum += Math.pow(exponential, i)/factorial(i);
+}
+document.write(sum);
+
+document.writeln("<br>");
+document.writeln("<br>");
+
+for (var line=1; line<60; line++) {
+  for(var i=1;i<29;i++) {
+    var s = 9;
+    document.write(s);
+  }
+  document.writeln("<br>");
+}
+
+function factorial(n){
+	if(n == 0){return 1;}
+    
+    return -n*factorial(n-1);
+}
+
+</script>
+</p>
